@@ -10,12 +10,15 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+//HOPE WE WILL USE THE SAME CONCEPT IN NEXT CLASS IN HOBBY LOBBY 
+
 namespace OC_Menu.Controllers
 {
     public class HomeController : Controller
     {
         //
         // GET: /Home/
+        
 
         public ActionResult Index()
         {
