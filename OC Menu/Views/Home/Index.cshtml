@@ -1,0 +1,54 @@
+﻿@model OC_Menu.Models.Cafeteria
+
+@{
+    ViewBag.Title = "OC Menu";
+}
+
+<h1>Menu Items</h1>
+<h2>..this is a webpage..</h2>
+<h3>Programming, its alot of fun </h3>
+<p> Displaying Breakfast Content </p>
+<table align="center" width='200' >
+@foreach (var line in Model.Breakfast())
+{
+   <tr align="left">
+     <td>
+      @line.lineName
+      </td>
+      @foreach (var item in line.Line_List)
+     {
+         @item
+     }    
+    </tr>
+}
+</table>
+<p> Displaying Lunch Content</p>
+<table align="center" width='200' >
+@foreach (var line in Model.Lunch())
+{
+   <tr align="left">
+     <td>
+      @line.lineName
+     </td>
+      @foreach (var item in line.Line_List)
+     {
+         @item 
+     }   
+    </tr>
+}
+</table>
+<p> Displaying Dinner Content</p>
+<table align="center" width='200' >
+@foreach (var line in Model.Dinner())
+{
+   <tr align="left">
+     <td>
+      @line.lineName
+      </td>
+      @foreach (var item in line.Line_List)
+     {
+       @item 
+     }    
+    </tr>
+}
+</table>
