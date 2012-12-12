@@ -13,6 +13,7 @@ using System.Web.Mvc;
 //HOPE WE WILL USE THE SAME CONCEPT IN NEXT CLASS IN HOBBY LOBBY 
 
 namespace OC_Menu.Controllers
+    // REMEMBER TO WRITE THE CONTROLLER NAME
 {
     public class HomeController : Controller
     {
